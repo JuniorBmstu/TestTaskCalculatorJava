@@ -44,7 +44,7 @@ public class Main
 	//Преобразование арабского числа в римское
 	public static String toRomanNumber(int number) throws 
 	Exception {
-	    if(number < 0 || number > 100)
+	    if(number < 1 || number > 100)
 	        throw new
 	        Exception("Ошибка! Римсое число не может быть неположительным"); 
 	    else{ 
