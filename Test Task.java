@@ -23,7 +23,7 @@ public class Main
 	public static int toIntNumber(String string) throws
 	Exception {
 	    int number = Integer.parseInt(string);
-	    if(number < 0 || number > 10)
+	    if(number < 1 || number > 10)
 	    throw new
 	        Exception("Ошибка! Число либо неположительно, либо больше 10");
 	    else return number;
