@@ -46,7 +46,7 @@ public class Main
 	Exception {
 	    if(number < 1 || number > 100)
 	        throw new
-	        Exception("Ошибка! Римсое число не может быть неположительным"); 
+	        Exception("Ошибка! Римское число не может быть неположительным"); 
 	    else{ 
             String result = "";
             while (number >= 100) {
@@ -95,7 +95,7 @@ public class Main
 		String string = scanner.next();
 		String[] operands = string.split("[-+/*]"); // парсим строку, чтобы найти операнды и их количество
         if(operands.length != 2){
-            System.out.println("Ошибка! Количество операндов не равно двум.");
+            System.out.println("Ошибка! Количество операндов не равно двум, либо не один оператор.");
         }
         else{
             boolean flag1 = isRomanNumber(operands[0]); //Если флаг поднят, то число явлеятся римским
