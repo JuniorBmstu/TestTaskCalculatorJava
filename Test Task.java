@@ -15,7 +15,7 @@ public class Main
 	    }
 	    if(flag)
 	    throw new
-	        Exception("Ошибка! Число либо неположительно, либо больше 10");
+	        Exception("Ошибка! Число либо неположительно либо больше 10");
 	   return Integer.parseInt(string);
 	}
 
@@ -25,7 +25,7 @@ public class Main
 	    int number = Integer.parseInt(string);
 	    if(number < 1 || number > 10)
 	    throw new
-	        Exception("Ошибка! Число либо неположительно, либо больше 10");
+	        Exception("Ошибка! Число либо неположительно либо больше 10");
 	    else return number;
 	    
 	}
@@ -95,7 +95,7 @@ public class Main
 		String string = scanner.next();
 		String[] operands = string.split("[-+/*]"); // парсим строку, чтобы найти операнды и их количество
         if(operands.length != 2){
-            System.out.println("Ошибка! Количество операндов не равно двум, либо не один оператор.");
+            System.out.println("Ошибка! Количество операндов не равно двум либо не один оператор.");
         }
         else{
             boolean flag1 = isRomanNumber(operands[0]); //Если флаг поднят, то число явлеятся римским
